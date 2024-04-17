@@ -1,3 +1,4 @@
 branch5 text
 \
 this text is from branch51
+this text is from branch51 new -----> for conflict
