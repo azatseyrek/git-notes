@@ -1,1 +1,5 @@
 this is new dummy text from master
+
+
+
+this dummy text is from branch2
