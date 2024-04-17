@@ -6,3 +6,5 @@ asd
 i forgat this part, good to have detached head!
 
 this is from branch1
+
+this is new text from branch1
