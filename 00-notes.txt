@@ -1,12 +1,29 @@
 Git Notes
 
-1) reset & revert -> reset ve revert arasindaki fark nedir?
+##Terimler:
 
+-staging area: git add yaptigimizda ekledigimiz alana staging area denir.
+
+-working directory: yazdığınız kodun git add . yapılmamış hali yani yazdığınız ancak henüz staging area'ya eklenmemiş olan kodun durumunu ifade eder.
+
+# git reset & git revert
+1) reset & revert -> reset ve revert arasindaki fark nedir?
 reset -> commitleri siler geri alinan duruma gecildiginda
 revert -> commitleri silmez.
 
 2) reset --hard nedir? 
 
-reset --hard yapildiginda yapilan tum degisikliler silinir. --hard yapilmaz ise sadece belirtilen commite doner yaptigin degisiklikler silinmez. Bunlari sonrada tekrardan staged durumuna ekleyip commitleyebilirsin.
+Diyelimki biz bir degisiklik yaptik. Bu degisklikte bir kac satir birseyler ekledik kodumuza. bunuda git add ve git commitle ekledik gite. Bu durumda bizim commitlerimiz arasinda artik yaptigimiz son degisiklik gorunuyor.
 
-test for reset --hard
+istenilen durum:
+
+Yaptigimiz degisikligi geri almak istiyoruz ve ayni zamanda commitleride historyden kaldirmak istiyoruz. o zaman kullanacagimiz komut  ---git reset---- 
+
+git reset --hard
+peki nedir bu hard olayi: iste olay burada basliyor. reset --hard yaptigimizda historyden commit silinir ayni zamanda yazdigimiz bir kac satir kodda working directoryden kaldirilir. 
+
+git reset
+Sadece git reset yazip --hard flagi koymazsak bu durumda historyden commit silinir ama yaptigimiz degisklik working directory gorunur.
+
+git reset --soft
+
