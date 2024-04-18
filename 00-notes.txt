@@ -46,4 +46,6 @@ OZET:
 **git merge --squash dev kullanimi: bu sekilde merge yaparsak en son bir commit daha atmamiz gerekli olur. Buda genelde dev merged to master gibi birseyler oluyor. Yani squash ile merge islemi yaparsa devdeki commitler yerine bizim en son atacagimiz commitler gorunecektir.
 
 
-**git merge --no-ff dev kullanimi. Burada devdeki commitlerde gelir. Ancak sadece git merge dev deki gibi degil merge edildigine dair bir commit messagida eklenir.
+**git merge --no-ff dev kullanimi. Burada devdeki commitlerde gelir. Ancak sadece git merge dev deki gibi degil merge edildigine dair bir commit messagida eklenir. 
+
+!!Onemli Not: Diyelimki masterdan bir dev branchi ciktik. devde birseyler commitledik. sonra masterdada dev de yaptigimiz degisklikleri etkilemeyen bir seyleri degistidik( dosya eklemek gibi). Burda yapacagimiz normal merge islemi yani mastera gecip yapilan git merge dev islemi otomatikmen non fast forward (recursive) olarak mergelenir. 
