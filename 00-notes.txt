@@ -9,3 +9,4 @@ revert -> commitleri silmez.
 
 reset --hard yapildiginda yapilan tum degisikliler silinir. --hard yapilmaz ise sadece belirtilen commite doner yaptigin degisiklikler silinmez. Bunlari sonrada tekrardan staged durumuna ekleyip commitleyebilirsin.
 
+test for reset --hard
