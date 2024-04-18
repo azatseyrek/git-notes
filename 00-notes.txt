@@ -26,4 +26,17 @@ git reset
 Sadece git reset yazip --hard flagi koymazsak bu durumda historyden commit silinir ama yaptigimiz degisklik working directory gorunur.
 
 git reset --soft
+soft reset yapildiginda yapilan degisklik staged aread kalir yani committen hemen onceki tum islemler gecerlidir.
+
+OZET:
+------> Diyelimki bir degisklik yaptik ve bunu git add  ile staged areaya ekledik sonrada commitledik. Artik git historymizde gorunuyor. Sonra dedik ki bunu geri alalim. Burda 4 senaryo var.
+        1. revert kullanmak. revert kullanirsak herseyi geri alir ancak historyde kalmaya devam eder bu sayede istenildiginde historyden ulasilabilinir.
+        2. reset kullanmak.
+            burda bize gerekli olan senaryoyu belirlemeliyiz.
+            ** git reset --> eger yaptigimiz degisiklikler working directoryde kalsin ancak staged areadn da silinsin istersek kullanabiliriz.
+            ** git reset --soft --> eger yaptigimiz degisklik historyden gitsin ancak working directoryde ve staged areda kalisin istiyrosak --soft kuyllanabiliriz.
+            ** git reset --hard --> historyden staged areadan ve working directoryden silmek istiyorusak --hard kullaniriz
+
+
+
 
