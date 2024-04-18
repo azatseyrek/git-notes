@@ -1,2 +1,11 @@
 Git Notes
 
+1) reset & revert -> reset ve revert arasindaki fark nedir?
+
+reset -> commitleri siler geri alinan duruma gecildiginda
+revert -> commitleri silmez.
+
+2) reset --hard nedir? 
+
+reset --hard yapildiginda yapilan tum degisikliler silinir. --hard yapilmaz ise sadece belirtilen commite doner yaptigin degisiklikler silinmez. Bunlari sonrada tekrardan staged durumuna ekleyip commitleyebilirsin.
+
