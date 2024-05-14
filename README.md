@@ -16,8 +16,8 @@
    - Diyelim ki bir değişiklik yaptık, birkaç satır kod ekledik ve bunları `git add` ve `git commit` ile kaydettik. Bu durumda commitlerimiz arasında yaptığımız son değişiklik görünüyor.
    - İstenilen durum: Yaptığımız değişikliği geri almak ve commitleri de history'den kaldırmak istiyoruz. İşte bu durumda `git reset` komutunu kullanırız.
      - `git reset --hard`: Bu seçenekte, history'den commit silinir ve aynı zamanda yapılan değişiklikler working directory'den de kaldırılır.
-     - `git reset`: Sadece `git reset` komutu kullanılırsa, history'den commit silinir, ancak yapılan değişiklikler working directory'de görünür.
-     - `git reset --soft`: Yapılan değişiklik history'den gitmez, ancak working directory ve staged area'da kalır.
+     - `git reset`: Sadece `git reset` komutu kullanılırsa, history'den commit silinir, ancak yapılan değişiklikler working directory'de görünür. Staged area'dan kaldirilir.
+     - `git reset --soft`: Yapılan değişiklik history'den gider, staged area'da kalır.
 
 ### Özet:
 Diyelim ki bir değişiklik yaptık ve bunu `git add` ile staged area'ya ekledik, sonra commitledik. Artık git history'mizde görünüyor. Sonra dedik ki bunu geri alalım. Bu durumda 4 senaryo var:
