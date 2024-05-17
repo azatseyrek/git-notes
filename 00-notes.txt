@@ -1,5 +1,5 @@
 Git Notes
-
+---
 ##Terimler:
 
 -staging area: git add yaptigimizda ekledigimiz alana staging area denir.
