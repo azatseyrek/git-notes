@@ -38,8 +38,6 @@ OZET:
             ** git reset --hard --> historyden staged areadan ve working directoryden silmek istiyorusak --hard kullaniriz
 
 
-test
-
 # merge cesitleri
 -->Fastforward ve Nonfast Forward olmak uzere iki cesittir. Bizim kullandigimiz genelde fast-forward merge oluyor. Yani diyelimki bir master branchimiz var. Biz bir dev branchi actik masterdan. devde degisiklikleri yaptik commitledik. daha sonra mastera gittigimizde git merge dev dedigimizde fast-forward seklinde merge islemi yapar. Burdaki asil mesele merge isleminden sonra  dev branchinin commitleride  mastera eklenir. Bu durumu istemiyorsakta git merge --squash dev yada nonfastforward merge (recursive merge) kullanabiliriz
 
