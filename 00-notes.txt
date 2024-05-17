@@ -11,7 +11,7 @@ Git Notes:
 reset -> commitleri siler geri alinan duruma gecildiginda
 revert -> commitleri silmez.
 
-2) reset --hard nedir? 
+2) reset --hard nedir? ?
 
 Diyelimki biz bir degisiklik yaptik. Bu degisklikte bir kac satir birseyler ekledik kodumuza. bunuda git add ve git commitle ekledik gite. Bu durumda bizim commitlerimiz arasinda artik yaptigimiz son degisiklik gorunuyor.
 
